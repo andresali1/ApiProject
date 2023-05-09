@@ -1,0 +1,55 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.index_head{
+    margin-bottom: 0;
+}
+
+.page_body{
+    margin-top: 5%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.index_container {
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.employee_table {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.empty_table {
+    text-align: center;
+}
+
+.empty_message{
+    margin-bottom: 5%;
+}
+
+.btn_back {
+    margin: auto;
+}
+
+.btn_back a{
+    color: white;
+}
+
+.page_footer {
+    margin-bottom: 0;
+}

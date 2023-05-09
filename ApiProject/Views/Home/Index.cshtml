@@ -1,0 +1,25 @@
+﻿@model ApiProject.Models.Employee
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container index_container">
+    <div class="container p-3 my-3 bg-light">
+        <h2 class="centered">Get Employees</h2>
+        <p class="centered">Type de Id of the employee and click, or just click to get all the employees</p>
+    </div>
+    <div class="container p-3 my-3 border">
+        <form method="post" action="@Url.Action("EmployeeList", "Home")">
+            <div class="row centered">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    @Html.TextBoxFor(model => model.id, new { @Id = "employeeId", @class = "form-control", @type = "number" })
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </form>
+    </div>
+</div>

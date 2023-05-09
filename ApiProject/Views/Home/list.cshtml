@@ -1,0 +1,33 @@
+﻿@model List<ApiProject.Dtos.EmployeeDto>
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<div class="container p-3 my-3 border">
+    <table class="table table-striped employee_table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+                <th>Anual Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr>
+                    <td>@employee.Employee_name</td>
+                    <td>@employee.Employee_age</td>
+                    <td>@employee.Employee_salary_string</td>
+                    <td>@employee.Employee_anual_salary_string</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="row">
+        <button type="button" class="btn btn-primary btn_back">
+            <a asp-area="" asp-controller="Home" asp-action="Index">Back</a>
+        </button>
+    </div>
+</div>
